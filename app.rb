@@ -26,5 +26,5 @@ end
 
 get '/alchemy/sentiment_analysis' do
   request = AlchemyAPI::SentimentAnalysis.new
-  request.search(RelayAlchemy::TextSentimentAnalysis.build_params(params))
+  json request.search(RelayAlchemy::TextSentimentAnalysis.build_params(params))
 end
