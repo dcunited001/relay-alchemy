@@ -10,3 +10,4 @@ gem 'unicorn', '~> 4.6.2'
 group :development do
   gem 'pry', '0.9.12.2'
 end
+gem 'sinatra-contrib'
