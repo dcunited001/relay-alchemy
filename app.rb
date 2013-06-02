@@ -7,6 +7,8 @@ require 'bundler'
 Bundler.require
 Bundler.require(:development) if ENV['RELAY_ALCHEMY_ENV'] == 'development'
 
+require 'multi_json'
+require 'sinatra/json'
 require 'active_support/hash_with_indifferent_access'
 require 'alchemy_api'
 require 'relay_alchemy'
@@ -26,4 +28,3 @@ get '/alchemy/sentiment_analysis' do
   request = AlchemyAPI::SentimentAnalysis.new
   request.search(RelayAlchemy::TextSentimentAnalysis.build_params(params))
 end
-
