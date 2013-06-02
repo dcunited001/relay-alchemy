@@ -1,0 +1,10 @@
+.env
+Procfile
+npm-debug.log
+log/*
+!log/.gitkeep
+repo/*
+!repo/.gitkeep
+.idea
+.DS_Store
+public/.sass_cache
