@@ -5,7 +5,7 @@ module RelayAlchemy
     def self.defaults
       { 'outputMode' => 'json',
         'url' => '',
-        'showSourceText' => 0.to_s }
+        'showSourceText' => 1.to_s }
     end
 
     def self.build_params(p = {})
