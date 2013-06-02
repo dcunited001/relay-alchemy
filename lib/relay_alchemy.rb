@@ -9,7 +9,7 @@ module RelayAlchemy
     end
 
     def self.build_params(p = {})
-      defaults.merge(text: p['text'], url: p['url']).symbolize_keys
+      defaults.merge('text' => p['text'], 'url' => p['url']).symbolize_keys
     end
 
   end
